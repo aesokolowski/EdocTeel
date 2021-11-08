@@ -18,8 +18,6 @@ class Solution {
         while (l1 != null && l2 != null) {
             int sum = l1.val + l2.val + carry;
             
-            System.out.println("sum: " + sum);
-            
             traverse.val = sum % 10;
             carry = sum > 9 ? 1 : 0;
             traverse.next = new ListNode();
